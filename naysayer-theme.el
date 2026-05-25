@@ -35,7 +35,7 @@
       (builtin      "#ffffff")
       (selection  "#0000ff")
       (text       "#d1b897")
-      (comments   "#44b340")
+      (comments   "#51c74c")
       (punctuation "#8cde94")
       (keywords "#ffffff")
       (variables "#c1d1e3")
