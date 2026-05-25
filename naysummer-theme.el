@@ -1,10 +1,10 @@
-;;; naysayer-theme.el --- The naysayer color theme
+;;; naysummer-theme.el --- The naysummer color theme
 
 ;; Author: Nick Aversano <nickav@users.noreply.github.com>
 ;; Version: 0.34
-;; Filename: naysayer-theme.el
+;; Filename: naysummer-theme.el
 ;; Package-Requires: ((emacs "24"))
-;; URL: https://github.com/nickav/naysayer-theme.el
+;; URL: https://github.com/nickav/naysummer-theme.el
 ;; License: GPL-3+
 
 ;;; Commentary:
@@ -14,19 +14,19 @@
 ;;; Code:
 
 (unless (>= emacs-major-version 24)
-  (error "The naysayer theme requires Emacs 24 or later!"))
+  (error "The naysummer theme requires Emacs 24 or later!"))
 
-(deftheme naysayer "The naysayer color theme")
+(deftheme naysummer "The naysummer color theme")
 
 ;; Monokai colors
-(defcustom naysayer-theme-yellow "#E6DB74" "Primary colors - yellow" :type 'string :group 'monokai)
-(defcustom naysayer-theme-orange "#FD971F" "Primary colors - orange" :type 'string :group 'monokai)
-(defcustom naysayer-theme-red "#F92672" "Primary colors - red" :type 'string :group 'monokai)
-(defcustom naysayer-theme-magenta "#FD5FF0" "Primary colors - magenta" :type 'string :group 'monokai)
-(defcustom naysayer-theme-blue "#66D9EF" "Primary colors - blue" :type 'string :group 'monokai)
-(defcustom naysayer-theme-green "#A6E22E" "Primary colors - green" :type 'string :group 'monokai)
-(defcustom naysayer-theme-cyan "#A1EFE4" "Primary colors - cyan" :type 'string :group 'monokai)
-(defcustom naysayer-theme-violet "#AE81FF" "Primary colors - violet" :type 'string :group 'monokai)
+(defcustom naysummer-theme-yellow "#E6DB74" "Primary colors - yellow" :type 'string :group 'monokai)
+(defcustom naysummer-theme-orange "#FD971F" "Primary colors - orange" :type 'string :group 'monokai)
+(defcustom naysummer-theme-red "#F92672" "Primary colors - red" :type 'string :group 'monokai)
+(defcustom naysummer-theme-magenta "#FD5FF0" "Primary colors - magenta" :type 'string :group 'monokai)
+(defcustom naysummer-theme-blue "#66D9EF" "Primary colors - blue" :type 'string :group 'monokai)
+(defcustom naysummer-theme-green "#A6E22E" "Primary colors - green" :type 'string :group 'monokai)
+(defcustom naysummer-theme-cyan "#A1EFE4" "Primary colors - cyan" :type 'string :group 'monokai)
+(defcustom naysummer-theme-violet "#AE81FF" "Primary colors - violet" :type 'string :group 'monokai)
 
 (let ((background "#062626")
       (gutters    "#062626")
@@ -52,7 +52,7 @@
       (line-fg "#126367"))
 
   (custom-theme-set-faces
-   'naysayer
+   'naysummer
 
    ;; Default colors
    ;; *****************************************************************************
@@ -92,16 +92,16 @@
    `(line-number-current-line ((t (:foreground ,white :background ,background))))
 
    ;; compilation
-   `(compilation-info ((t ,(list :foreground naysayer-theme-green
+   `(compilation-info ((t ,(list :foreground naysummer-theme-green
                                  :inherit 'unspecified))))
-   `(compilation-warning ((t ,(list :foreground naysayer-theme-yellow
+   `(compilation-warning ((t ,(list :foreground naysummer-theme-yellow
                                     :bold t
                                     :inherit 'unspecified))))
    `(compilation-error ((t (:foreground, error))))
    `(compilation-mode-line-fail ((t ,(list :foreground error
                                            :weight 'bold
                                            :inherit 'unspecified))))
-   `(compilation-mode-line-exit ((t ,(list :foreground naysayer-theme-green
+   `(compilation-mode-line-exit ((t ,(list :foreground naysummer-theme-green
                                            :weight 'bold
                                            :inherit 'unspecified))))
 
@@ -110,18 +110,18 @@
    `(hl-line-face ((t (:background ,highlight-line))))
 
    ;; rainbow-delimiters
-   `(rainbow-delimiters-depth-1-face ((t (:foreground ,naysayer-theme-violet))))
-   `(rainbow-delimiters-depth-2-face ((t (:foreground ,naysayer-theme-blue))))
-   `(rainbow-delimiters-depth-3-face ((t (:foreground ,naysayer-theme-green))))
-   `(rainbow-delimiters-depth-4-face ((t (:foreground ,naysayer-theme-yellow))))
-   `(rainbow-delimiters-depth-5-face ((t (:foreground ,naysayer-theme-orange))))
-   `(rainbow-delimiters-depth-6-face ((t (:foreground ,naysayer-theme-red))))
-   `(rainbow-delimiters-depth-7-face ((t (:foreground ,naysayer-theme-violet))))
-   `(rainbow-delimiters-depth-8-face ((t (:foreground ,naysayer-theme-blue))))
-   `(rainbow-delimiters-depth-9-face ((t (:foreground ,naysayer-theme-green))))
-   `(rainbow-delimiters-depth-10-face ((t (:foreground ,naysayer-theme-yellow))))
-   `(rainbow-delimiters-depth-11-face ((t (:foreground ,naysayer-theme-orange))))
-   `(rainbow-delimiters-depth-12-face ((t (:foreground ,naysayer-theme-red))))
+   `(rainbow-delimiters-depth-1-face ((t (:foreground ,naysummer-theme-violet))))
+   `(rainbow-delimiters-depth-2-face ((t (:foreground ,naysummer-theme-blue))))
+   `(rainbow-delimiters-depth-3-face ((t (:foreground ,naysummer-theme-green))))
+   `(rainbow-delimiters-depth-4-face ((t (:foreground ,naysummer-theme-yellow))))
+   `(rainbow-delimiters-depth-5-face ((t (:foreground ,naysummer-theme-orange))))
+   `(rainbow-delimiters-depth-6-face ((t (:foreground ,naysummer-theme-red))))
+   `(rainbow-delimiters-depth-7-face ((t (:foreground ,naysummer-theme-violet))))
+   `(rainbow-delimiters-depth-8-face ((t (:foreground ,naysummer-theme-blue))))
+   `(rainbow-delimiters-depth-9-face ((t (:foreground ,naysummer-theme-green))))
+   `(rainbow-delimiters-depth-10-face ((t (:foreground ,naysummer-theme-yellow))))
+   `(rainbow-delimiters-depth-11-face ((t (:foreground ,naysummer-theme-orange))))
+   `(rainbow-delimiters-depth-12-face ((t (:foreground ,naysummer-theme-red))))
 
    ;; which-func
    `(which-func ((t (:inverse-video unspecified
@@ -173,7 +173,7 @@
   )
 
   (custom-theme-set-variables
-    'naysayer
+    'naysummer
     '(linum-format " %5i ")
   )
 )
@@ -185,12 +185,12 @@
 
 ;; *****************************************************************************
 
-(provide-theme 'naysayer)
+(provide-theme 'naysummer)
 
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; End:
 
-(provide 'naysayer-theme)
+(provide 'naysummer-theme)
 
-;;; naysayer-theme.el ends here
+;;; naysummer-theme.el ends here
